@@ -15,7 +15,7 @@ def test_sales_data_check():
                 "value": 100.50,
                 "product": "Product X",
                 "quantity": 3,
-                "category": "category3",
+                "category": "category 3",
             }
 
     sales = Sales(**data_check)
@@ -34,7 +34,7 @@ def test_sales_invalid_data_check():
             "value": -100,
             "product": "",
             "quantity": -1,
-            "category": "category3",
+            "category": "category 3",
         }
     
     with pytest.raises(ValidationError):
@@ -47,7 +47,7 @@ def test_category_invalid_data_check():
             "value": 100.50,
             "product": "Product X",
             "quantity": 3,
-            "category": "not included",
+            "category": "Not Valid",
         }
     
     with pytest.raises(ValidationError):
