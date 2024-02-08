@@ -14,3 +14,5 @@ class ExcelValidatorUI:
 
     def upload_file(self):
         return st.file_uploader("Upload the excel file here", type=['xlsx'])
+    
+    
