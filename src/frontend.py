@@ -15,4 +15,11 @@ class ExcelValidatorUI:
     def upload_file(self):
         return st.file_uploader("Upload the excel file here", type=['xlsx'])
     
+    def display_results(self,result,errors):
+        if errors:
+            for error in errors:
+                st.error(f"Validation Error: {error}")
+        else:
+            st.success("the schema is correct")
+    
     

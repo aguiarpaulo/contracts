@@ -27,12 +27,12 @@ def process_excel(uploaded_file):
             except Exception as e:
                 raise ValueError(f"Error row {index + 2}: {e}")
 
-        return df, True, None
+        return True, None
 
     except ValueError as ve:
-        return df, False,str(ve)
+        return False #,str(ve)
     except Exception as e:
-        return df, False, f"Unexpected error: {str(e)}"
+        return False, f"Unexpected error: {str(e)}"
 
 def excel_to_sql(df):
     df.to_sql('sales', con=DATABASE_URL, if_exists='replace', index=False)    

@@ -1,6 +1,7 @@
 from frontend import ExcelValidatorUI
 from backend import process_excel
 
+
 def main():
     ui = ExcelValidatorUI()
     ui.display_header()
@@ -9,7 +10,7 @@ def main():
 
     if upload_file:
         result, errors = process_excel(upload_file)
-        ui.display_header(result,errors)
+        ui.display_results(result,errors)
 
 if __name__ == "__main__":
     main()
