@@ -1,9 +1,12 @@
 name: ci
 
-on: pull-request
+on: pull_request
 jobs:
     test:
         runs-on: ubuntu-latest
+        strategy:
+          matrix:
+            python-version: [3.10,3.11,3.12]
         steps:
         - name: Download the repository
         uses: actions/checkout@v4
