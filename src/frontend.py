@@ -21,5 +21,16 @@ class ExcelValidatorUI:
                 st.error(f"Validation Error: {error}")
         else:
             st.success("the schema is correct")
+
+    def display_save_button(self):
+        return st.button("Save the data into database")
+    
+    def display_wrong_message(self):
+        return st.error("Improvements required")
+    
+    def display_success_message(self):
+        return st.success("Data successfully saved in the database!")
+
+    
     
     
