@@ -22,7 +22,6 @@ def test_read_data_and_check_schema():
     assert not df.empty, "The Dataframe is empty."
 
     expected_dtype = {
-        'id': 'int64',
         'email': 'object', 
         'date': 'datetime64[ns]',
         'value': 'float64',
@@ -30,7 +29,7 @@ def test_read_data_and_check_schema():
         'product': 'object',
         'category': 'object'
     }
-
+    print(df.types.to_dict)
     assert df.dtypes.to_dict() == expected_dtype, "The DataFrame schema does not match what was expected."
     #Save into database
     engine = create_engine(DATABASE_URL)

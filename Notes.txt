@@ -1,0 +1,69 @@
+python -m venv .venv
+
+#Python activate
+.\.venv\Scripts\Activate
+
+#put all the dependencies to requirements.txt
+pip freeze > requirements.txt
+
+#install streamilt
+pip install streamlit
+
+#to serialize API to json
+pip install pydantic
+
+#Help to test
+pip install pytest
+
+#run the tests 
+pytest test
+
+#Start the instance to upload the excel
+streamlit run src/app.py
+
+#browser simulator
+pip install selenium
+
+#test funcional
+pytest tests/test_functional
+
+#To create shortcut on terminal
+pip install taskipy
+
+#one module missing
+pip install "pydantic[email]
+
+task run 
+task test
+
+#python -m pip install git+https://github.com/theskumar/python-dotenv.git OR 
+pip install dotenv or pip install python-dotenv
+
+#Work with excel
+pip install openpyxl
+
+#Go to your browser and star a server to deploy your solution:(free cost)
+https://streamlit.io/
+https://share.streamlit.io/deploy
+Ex. https://aguiarpaulo-contracts-srcapp-ah4obr.streamlit.app/
+
+#Documentation
+pip install mkdocs-material
+pip install mkdocstrings
+
+#start the documentation server
+mkdocs serve
+
+#upload database
+https://dashboard.render.com/
+
+server:	my-db-postgres
+
+#check sql connection
+pip install sqlalchemy
+pip install psycopg2-binary
+
+pip install sentry_sdk
+
+
+
