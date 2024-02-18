@@ -28,8 +28,8 @@ With the Excel Validator, you can be sure that your data is always compliant wit
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/lvgalvao/dataprojectstarterkit.git
-cd dataprojectstarterkit
+git clone https://github.com/aguiarpaulo/excel_validator.git
+cd excel_validator
 ```
 2. Configure the correct Python version with `pyenv`:
 ```bash
@@ -45,4 +45,9 @@ source .venv/bin/activate
 .venv\Scripts\Activate
 # Windows
 pip install -r requirements.txt
+```
+4. Run and test the project:
+```bash
+task run
+task test
 ```
