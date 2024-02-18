@@ -23,7 +23,6 @@ Automated tests have been incorporated into the `ci.yml` file and are triggered 
 With the Excel Validator, you can be sure that your data is always compliant with business rules, ensuring the integrity of the business area indicators.
 
 
-@@ -1 +1,24 @@
 ### Installation and Configuration
 
 1. Clone the repository:
